@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>웹페이지의 구성요소</title>
+    <style>
+        h3{
+            text-align: center;
+            color: darkred;
+        }
+
+        hr{
+            border: 10px solid darkgray;
+        }
+
+        span{
+            color: violet;
+            font-size: 20px;
+        }
+
+    </style>
+    <script>
+        function show() {
+            document.getElementById("fig").src = "https://gift-a-tree.com/wp-content/uploads/2021/10/Oak-tree-1.jpg";
+        }
+        function hide() {
+            document.getElementById("fig").src = "";
+        }
+    </script>
+</head>
+<body>
+    <h3>Elvis Presley</h3>
+    <hr />
+    <div><img id="fig" src="" alt="" /></div>
+    He was an American singer and actor. In November 1956, he made his film debut in 
+    <span onmouseover="show()" onmouseout="hide()">Love Me Tender</span>.
+    he is often referred to as "<span>the Kng of Rock and Roll</span>".
+
+</body>
+</html>
