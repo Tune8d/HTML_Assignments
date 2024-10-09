@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>animation</title>
+    <style>
+
+        /* 
+         * 5챕터 6번 예제(1) 애니메이션
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg); 
+            }
+
+            to {
+                transform: rotate(360deg); 
+            }
+        }
+        */
+        /* 
+         * 5챕터 6번 예제(2) 애니메이션*/
+        @keyframes rotate2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-90deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            75% {
+                transform: rotate(90deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+
+        }
+
+
+        #target {
+            margin: 50px;
+            padding: 5px;
+            border: 1px solid yellowgreen;
+            max-width: 50%;
+            height: auto;
+            animation: rotate2 4s linear infinite; 
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>어지러워요</h2>
+    <hr />
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg" alt="Spgbob" id="target" />
+    </div>
+</body>
+</html>

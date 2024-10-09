@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>animation</title>
+    <style>
+
+        #target {
+            margin: 50px;
+            padding: 5px;
+            border: 1px solid yellowgreen;
+            max-width: 50%;
+            height: auto;
+            transition: transform 2s ease-in-out;
+        }
+
+        #target:hover {
+            transform: scale(2, 1)
+        }
+
+    </style>
+</head>
+<body>
+    <h2>마우스를 올려봐요</h2>
+    <hr />
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg" alt="Spgbob" id="target" />
+    </div>
+</body>
+</html>

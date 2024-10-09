@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>리스트 만들기</title>
+    <style>
+        /* 
+        * 5챕터 예제 4-(1) 답변용 스타일. 4-(2)와 배경변경이 중복되지 않게 하기 위함.
+        ul {
+            background-color: aliceblue;
+        }
+        */
+
+        .objectHover{
+            padding-right: 10px;
+        }
+
+        #target:hover{
+            background-color: yellowgreen;
+        }
+
+        .container {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/ad/BlankMap-World_gray.svg);
+            max-width: 100%;
+            height: auto;
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>가보고 싶은 나라</h2>
+    <hr />
+    <div class="container">
+        <ul stytle="list-style-type:square;">
+            <li>프랑스</li>
+            <li>독일</li>
+            <div class="objectHover">
+                <li id="target">칠레</li>
+            </div>
+            <li>남아공</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
